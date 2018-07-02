@@ -3,10 +3,10 @@
     <figure class="image is-3by1">
          <img src="../assets/logo.png" />
     </figure>
+    <div>
+      here comes the tiles
+    </div>
   </main>
-        <div>
-          here comes the tiles
-        </div>
 </template>
 
 <script lang="ts">
