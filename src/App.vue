@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/login">Login</router-link>
-      <input type="text" v-model="someKey"/>
+      <router-link to="/">Home</router-link>|<router-link to="/login">Login</router-link>
     </div>
+    <Header/>
+    <Nav/>
     <router-view/>
   </div>
 </template>
@@ -33,12 +32,19 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import Header from '@/components/Header.vue';
+import Nav from '@/components/Nav.vue';
+
 
 export default Vue.extend({
   data() {
     return {
-      someKey: 'SomeValue',
+      // someKey: 'SomeValue',
     };
+  },
+  components:{
+    Header,
+    Nav,
   },
 });
 </script>
