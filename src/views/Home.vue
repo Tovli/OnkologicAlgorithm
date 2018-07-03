@@ -1,7 +1,7 @@
 <template>
   <main>
-    <figure class="image is-3by1">
-         <img src="../assets/logo.png" />
+    <figure class="image is-2by1">
+      <img src="../../public/img/banner/doctor-1149149_960_720.jpg"/>
     </figure>
     <div>
       here comes the tiles
