@@ -5,16 +5,18 @@
       Search
     </div>
     <div class="level-right">
-      Quick Links
+      <QuickLinks/>
     </div>
   </header>
 </template>
 
 <script lang="ts">
+import QuickLinks from '@/components/QuickLinks.vue';
+
 export default {
   name: 'Header',
-  props: {
-    msg: String,
+  components: {
+    QuickLinks,
   },
 };
 </script>
