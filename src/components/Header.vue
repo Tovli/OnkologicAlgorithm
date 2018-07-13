@@ -1,13 +1,11 @@
 <template>
   <header class="level">
-    <div class="level-left">
-      First column
-    </div>
+    <div class="logo level-left"></div>
     <div class="level-item">
-      Second column
+      Search
     </div>
     <div class="level-right">
-      Third column
+      Quick Links
     </div>
   </header>
 </template>
@@ -21,20 +19,15 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  header {
+    > * {
+      height: 100px;
+    }
+    .logo {
+      width: 200px;
+      background: transparent url("../../public/img/The_Ottawa_Hospital_Logo.jpg") no-repeat;
+      background-size: 100%;
+    }
+  }
 </style>
