@@ -1,12 +1,12 @@
 <template>
-  <header class="columns">
-    <div class="column is-one-third">
+  <header class="level">
+    <div class="level-left">
       First column
     </div>
-    <div class="column">
+    <div class="level-item">
       Second column
     </div>
-    <div class="column is-one-fifth">
+    <div class="level-right">
       Third column
     </div>
   </header>
