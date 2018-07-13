@@ -1,5 +1,6 @@
 <template>
   <nav class="columns">
+    <!--todo - vue-repeat this-->
     <a class="column mdi mdi-36px mdi-access-point">
       <div>Foo</div>
     </a>
