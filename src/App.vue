@@ -1,20 +1,21 @@
 <template>
+  <!--<div id="app" dir="rtl">-->
   <div id="app">
     <Top/>
-    <Header/>
-    <Nav/>
-    <router-view/>
+    <div class="body-content">
+      <Header/>
+      <Nav/>
+      <router-view class="router-view"/>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import Top from '@/components/Top.vue';
 import Header from '@/components/Header.vue';
 import Nav from '@/components/Nav.vue';
 
-
-export default Vue.extend({
+export default {
   data() {
     return {
       // someKey: 'SomeValue',
@@ -25,24 +26,23 @@ export default Vue.extend({
     Header,
     Nav,
   },
-});
+};
 </script>
 
 <style lang="less">
   #app {
-    padding: 30px;
+    padding: 10px;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
-  }
 
-  #top {
-    span {
-      font-weight: bold;
-      color: #2c3e50;
-      cursor: pointer;
+    .body-content {
+      padding: 30px;
+
+      .router-view {
+        margin-top: 30px;
+      }
     }
   }
 </style>

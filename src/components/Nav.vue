@@ -33,4 +33,7 @@ export default {
 </script>
 
 <style scoped lang="less">
+  nav {
+    border: 1px solid #ddd;
+  }
 </style>

@@ -13,8 +13,13 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/login',
-      name: 'login',
+      path: '/doctor-login',
+      name: 'doctor login',
+      component: Login,
+    },
+    {
+      path: '/patient-login',
+      name: 'patient login',
       component: Login,
     },
   ],

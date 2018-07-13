@@ -734,6 +734,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
+"@mdi/font@^2.5.94":
+  version "2.5.94"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-2.5.94.tgz#c05415b294243962046c398c8ba0b3a2311cf690"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

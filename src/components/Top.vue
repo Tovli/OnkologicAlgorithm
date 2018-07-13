@@ -1,16 +1,21 @@
 <template>
-  <div id="top">
-    <!--<router-link to="/">Home</router-link>|<router-link to="/login">Login</router-link>-->
-    <span>Home</span>|<span>Login</span>
+  <div class="top">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/patient-login">Patient Login</router-link> |
+    <router-link to="/doctor-login">Doctor Login</router-link>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'Top',
 };
 </script>
 
-<style scoped>
-
+<style scoped lang="less">
+.top {
+  a {
+    font-weight: bold;
+  }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="home">
     <Banner/>
     <Tiles/>
   </main>
