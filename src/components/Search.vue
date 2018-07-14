@@ -4,7 +4,7 @@
       <b-input placeholder="Search..."
                type="search"
                size="is-large"
-               expanded="true"
+               v-bind:expanded="true"
                icon="magnify">
       </b-input>
       <p class="control">
