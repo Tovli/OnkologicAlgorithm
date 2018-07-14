@@ -29,16 +29,13 @@ export default {
 };
 </script>
 
+<!--this should not be scoped-->
 <style lang="less">
   @import "./assets/baseline";
   @import "./assets/theme";
 
   #app {
     padding: 10px;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: @secondary-color;
 
     .body-content {
       padding: 30px;

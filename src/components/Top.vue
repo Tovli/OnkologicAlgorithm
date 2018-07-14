@@ -16,8 +16,6 @@ export default {
 
 .top {
   a {
-    font-weight: bold;
-
     &:not(:last-child) {
       margin-right: .5rem;
 

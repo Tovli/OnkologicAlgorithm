@@ -1,6 +1,6 @@
 <template>
   <main class="login">
-    <h1 class="title">This is the login page</h1>
+    <h1 class="heading">login</h1>
     <section>
       <b-field label="Username"
                type="is-success"
@@ -29,4 +29,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  .login {
+    padding: 2rem 6rem;
+
+    section {
+      margin-top: 2rem;
+    }
+  }
 </style>

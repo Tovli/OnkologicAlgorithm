@@ -3,8 +3,8 @@
     <router-link to="/" class="logo level-left columns">
       <img src="../../public/img/medical-logo.png" class="column"/>
       <div class="column">
-        <p class="heading">ipsum</p>
-        <p class="tagline">the best hospital, ever</p>
+        <h1 class="heading">ipsum</h1>
+        <h2 class="tagline">the best hospital, ever</h2>
       </div>
     </router-link>
     <div class="level-item">
@@ -33,16 +33,11 @@ export default {
     .logo {
       margin-bottom: 0;
       background-size: 100px 100px;
-      font: 1.2rem Georgia, Serif;
 
       img {
         flex-grow: 0;
         width: 100px;
         height: 100px;
-      }
-
-      .heading {
-        font-size: 1.5rem;
       }
     }
   }
