@@ -26,6 +26,7 @@ export default {
         position: relative;
         display: inline-block;
         left: .25rem;
+        font-weight: bold;
       }
 
       // reset the hover color
