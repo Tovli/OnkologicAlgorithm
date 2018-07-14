@@ -3,12 +3,13 @@
     <b-field>
       <b-input placeholder="Search..."
                type="search"
-               size="is-large"
-               v-bind:expanded="true"
-               icon="magnify">
+               size="is-medium"
+               v-bind:expanded="true">
       </b-input>
       <p class="control">
-        <button class="button is-large">Search</button>
+        <button class="button is-medium">
+          <i class="mdi mdi-magnify mdi-18px"></i>
+        </button>
       </p>
     </b-field>
   </div>
@@ -24,12 +25,17 @@ export default {
   @import "../assets/theme";
 
   .search {
-    width: 100%;
-    margin: 0 4rem;
+    padding: 0 2rem;
 
     button {
       color: @secondary-complement-color !important;
       background-color: @primary-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .search {
+      padding: 2rem 0;
     }
   }
 </style>

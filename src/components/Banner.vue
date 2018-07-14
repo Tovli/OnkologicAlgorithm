@@ -49,23 +49,23 @@ export default {
 
 <style scoped lang="less">
 
-.VueCarousel-wrapper {
-  .VueCarousel-slide {
-    height: 400px;
-    padding: 2em;
-    font-size: 2rem;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-
   .VueCarousel-wrapper {
     .VueCarousel-slide {
-      height: 200px;
-      font-size: 1.6rem;
+      height: 400px;
+      padding: 2em;
+      font-size: 2rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
     }
   }
-}
+
+  @media (max-width: 768px) {
+
+    .VueCarousel-wrapper {
+      .VueCarousel-slide {
+        height: 200px;
+        font-size: 1.6rem;
+      }
+    }
+  }
 </style>
