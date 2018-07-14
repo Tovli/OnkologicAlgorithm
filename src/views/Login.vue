@@ -1,19 +1,21 @@
 <template>
   <main class="login">
-    <h1 class="heading">login</h1>
+    <h2 class="heading">login</h2>
     <section>
       <b-field label="Username"
                type="is-success"
                message="This username is available">
-        <b-input value="johnsilver" maxlength="30"></b-input>
+        <b-input value="johnsilver" maxlength="30" size="is-large"></b-input>
       </b-field>
 
       <b-field label="Password">
         <b-input type="password"
                  value="iwantmytreasure"
+                 size="is-large"
                  password-reveal>
         </b-input>
       </b-field>
+      <input type="submit" value="submit" class="button is-large is-pulled-right"/>
     </section>
   </main>
 </template>
@@ -34,6 +36,10 @@ export default {
 
     section {
       margin-top: 2rem;
+
+      input[type=submit] {
+        margin-top: 1rem;
+      }
     }
   }
 </style>

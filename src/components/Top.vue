@@ -16,6 +16,7 @@ export default {
 
 .top {
   a {
+
     &:not(:last-child) {
       margin-right: .5rem;
 

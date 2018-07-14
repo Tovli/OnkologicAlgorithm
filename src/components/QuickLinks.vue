@@ -10,6 +10,12 @@
     <a class="column mdi mdi-36px mdi-airplane">
       <div>Baz</div>
     </a>
+    <a class="column mdi mdi-36px mdi-alien">
+      <div>Wat</div>
+    </a>
+    <a class="column mdi mdi-36px mdi-album">
+      <div>Wow</div>
+    </a>
   </nav>
 </template>
 

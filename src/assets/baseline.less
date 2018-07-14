@@ -6,14 +6,26 @@ body {
 }
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: @secondary-color;
+}
+
+body,
+label,
+input,
+button,
+textarea,
+select {
+  color: @secondary-color !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+label {
+  font-weight: normal !important;
 }
 
 a {
-  font-weight: bold;
   color: @secondary-color;
 }
 
@@ -26,9 +38,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.5rem !important;
+  font-size: 1.7rem !important;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.9rem !important;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
