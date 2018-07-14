@@ -8,7 +8,7 @@
       </div>
     </router-link>
     <div class="level-item">
-      Search
+      <Search/>
     </div>
     <div class="level-right">
       <QuickLinks/>
@@ -17,11 +17,13 @@
 </template>
 
 <script lang="ts">
+import Search from '@/components/Search.vue';
 import QuickLinks from '@/components/QuickLinks.vue';
 
 export default {
   name: 'Header',
   components: {
+    Search,
     QuickLinks,
   },
 };
