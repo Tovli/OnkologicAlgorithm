@@ -33,7 +33,25 @@ export default {
 </script>
 
 <style scoped lang="less">
+  @import "../assets/theme";
+
   nav {
-    border: 1px solid #ddd;
+    padding: 0 1rem;
+    border: 1px solid @primary-color;
+    background-color: @primary-color;
+    border-radius: 5px;
+
+    > .navbar-item > .navbar-link,
+    > .navbar-item.has-dropdown:hover > .navbar-link,
+    > .navbar-item.has-dropdown.is-active > .navbar-link {
+      border: 0 none;
+      font-weight: bold;
+      color: @secondary-complement-color;
+      background-color: @primary-color;
+
+      &:after {
+        border-color: @secondary-complement-color;
+      }
+    }
   }
 </style>

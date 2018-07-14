@@ -1,7 +1,6 @@
 <template>
-  <div class="top">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/patient-login">Patient Login</router-link> |
+  <div class="top level-right">
+    <router-link to="/patient-login">Patient Login</router-link>
     <router-link to="/doctor-login">Doctor Login</router-link>
   </div>
 </template>
@@ -13,9 +12,30 @@ export default {
 </script>
 
 <style scoped lang="less">
+@import "../assets/theme";
+
 .top {
   a {
     font-weight: bold;
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+
+      // add separator
+      &:after {
+        content: '|';
+        position: relative;
+        display: inline-block;
+        left: .25rem;
+      }
+
+      // reset the hover color
+      &:hover {
+        &:after {
+          color: @secondary-color;
+        }
+      }
+    }
   }
 }
 </style>

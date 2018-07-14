@@ -1,6 +1,12 @@
 <template>
   <header class="level">
-    <div class="logo level-left"></div>
+    <router-link to="/" class="logo level-left columns">
+      <img src="../../public/img/medical-logo.png" class="column"/>
+      <div class="column">
+        <p class="heading">ipsum</p>
+        <p class="tagline">the best hospital, ever</p>
+      </div>
+    </router-link>
     <div class="level-item">
       Search
     </div>
@@ -23,13 +29,21 @@ export default {
 
 <style scoped lang="less">
   header {
-    > * {
-      height: 100px;
-    }
+    padding: 0 2em;
     .logo {
-      width: 200px;
-      background: transparent url("../../public/img/The_Ottawa_Hospital_Logo.jpg") no-repeat;
-      background-size: 100%;
+      margin-bottom: 0;
+      background-size: 100px 100px;
+      font: 1.2rem Georgia, Serif;
+
+      img {
+        flex-grow: 0;
+        width: 100px;
+        height: 100px;
+      }
+
+      .heading {
+        font-size: 1.5rem;
+      }
     }
   }
 </style>
