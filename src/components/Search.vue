@@ -26,7 +26,7 @@ export default {
 
   .search {
     flex-grow: 1;
-    margin: 0 2rem;
+    margin: 0 4rem;
 
     button {
       color: @secondary-complement-color !important;
@@ -35,10 +35,14 @@ export default {
   }
 
   @media (max-width: 1088px) {
-    // a fix to the header overflow issue
-    .search .control {
-      width: 1em;
-      margin-right: 2rem;
+    .search {
+      margin: 0 2rem;
+
+      // a fix to the header overflow issue
+      .control {
+        width: 1em;
+        margin-right: 2rem;
+      }
     }
   }
 

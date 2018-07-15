@@ -3,7 +3,7 @@
     <a v-for="link in links"
        v-bind:key="link.label"
        v-bind:class="'mdi-' + link.icon"
-       class="tile mdi mdi-24px quick-link">
+       class="tile mdi mdi-36px quick-link mdi-outline">
       <div>{{ link.label }}</div>
     </a>
   </nav>
@@ -17,15 +17,11 @@ export default {
       links: [
         {
           label: 'Foo',
-          icon: 'airplane',
-        },
-        {
-          label: 'Bar',
-          icon: 'elephant',
+          icon: 'briefcase-outline',
         },
         {
           label: 'Baz Baz',
-          icon: 'cake',
+          icon: 'plus-outline',
         },
         {
           label: 'Wat',
@@ -33,7 +29,11 @@ export default {
         },
         {
           label: 'Wow',
-          icon: 'heart',
+          icon: 'heart-outline',
+        },
+        {
+          label: 'Bar',
+          icon: 'email-outline',
         },
       ],
     };
@@ -45,7 +45,7 @@ export default {
 
   .quick-link {
     display: inline-block;
-    font-size: 1rem;
+    font-size: .85rem;
     text-align: center;
     white-space: nowrap;
     margin-left: 1rem;
