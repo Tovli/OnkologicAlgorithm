@@ -37,8 +37,8 @@ export default {
 
   nav {
     padding: 0 1rem;
-    border: 1px solid @primary-color;
-    background-color: @primary-color;
+    border: 1px solid @primary-complement-color;
+    background-color: @primary-complement-color;
     border-radius: 5px;
 
     > .navbar-item > .navbar-link,
@@ -47,7 +47,7 @@ export default {
       border: 0 none;
       font-weight: bold;
       color: @secondary-complement-color;
-      background-color: @primary-color;
+      background-color: @primary-complement-color;
 
       &:after {
         border-color: @secondary-complement-color;
