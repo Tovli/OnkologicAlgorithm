@@ -44,6 +44,7 @@ export default {
 <style scoped lang="less">
 
   .quick-link {
+    display: inline-block;
     font-size: 1rem;
     text-align: center;
     white-space: nowrap;
@@ -52,15 +53,12 @@ export default {
     &:first-child {
       margin-left: 0;
     }
-
-    max-width: max-content;
-    display: inline-block;
   }
 
 
   @media (max-width: 768px) {
-    .quick-link {
-      max-width: 100%;
+    nav {
+      display: flex;
     }
   }
 </style>

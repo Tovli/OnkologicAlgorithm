@@ -26,7 +26,7 @@ export default {
 
   .search {
     flex-grow: 1;
-    padding: 0 2rem;
+    margin: 0 2rem;
 
     button {
       color: @secondary-complement-color !important;

@@ -28,18 +28,18 @@ export default {
 
 <style scoped lang="less">
   header {
-    padding: 0 2rem 1rem;
+    padding: 0 0 1rem;
 
     .logo {
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex-grow: 0;
-      height: 6rem;
+      height: 5rem;
       margin-bottom: 0;
-      padding: 0 0 0 7rem;
+      padding: 0 0 0 6rem;
       background: transparent url("../../public/img/medical-logo.png") no-repeat;
-      background-size: 6rem 6rem;
+      background-size: 5rem 5rem;
 
       .heading,
       .tagline {

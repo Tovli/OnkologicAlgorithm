@@ -1,5 +1,10 @@
 <template>
-  <carousel v-bind:per-page="1" class="banner">
+  <carousel v-bind:per-page="1"
+            v-bind:speed="1500"
+            v-bind:autoplay="true"
+            v-bind:autoplayHoverPause="true"
+            v-bind:autoplayTimeout="5000"
+            class="banner">
     <slide v-for="slide in slides"
            v-bind:key="slide.text"
            v-bind:style="slideStyle(slide)">
