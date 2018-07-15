@@ -16,6 +16,7 @@
         </b-input>
       </b-field>
       <input type="submit" value="submit" class="button is-large is-pulled-right"/>
+      <i class="is-clearfix"></i>
     </section>
   </main>
 </template>
