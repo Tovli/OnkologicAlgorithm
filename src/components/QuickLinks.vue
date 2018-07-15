@@ -1,20 +1,10 @@
 <template>
-  <nav class="columns">
-    <!--todo - vue-repeat this-->
-    <a class="column mdi mdi-36px mdi-access-point">
-      <div>Foo</div>
-    </a>
-    <a class="column mdi mdi-36px mdi-account">
-      <div>Bar</div>
-    </a>
-    <a class="column mdi mdi-36px mdi-airplane">
-      <div>Baz</div>
-    </a>
-    <a class="column mdi mdi-36px mdi-alien">
-      <div>Wat</div>
-    </a>
-    <a class="column mdi mdi-36px mdi-album">
-      <div>Wow</div>
+  <nav class="tile is-horizontal">
+    <a v-for="link in links"
+       v-bind:key="link.label"
+       v-bind:class="'mdi-' + link.icon"
+       class="tile mdi mdi-24px quick-link">
+      <div>{{ link.label }}</div>
     </a>
   </nav>
 </template>
@@ -22,11 +12,55 @@
 <script lang="ts">
 export default {
   name: 'QuickLinks',
+  data() {
+    return {
+      links: [
+        {
+          label: 'Foo',
+          icon: 'airplane',
+        },
+        {
+          label: 'Bar',
+          icon: 'elephant',
+        },
+        {
+          label: 'Baz Baz',
+          icon: 'cake',
+        },
+        {
+          label: 'Wat',
+          icon: 'earth',
+        },
+        {
+          label: 'Wow',
+          icon: 'heart',
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="less">
-  a {
+
+  .quick-link {
+    font-size: 1rem;
     text-align: center;
+    white-space: nowrap;
+    margin-left: 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    max-width: max-content;
+    display: inline-block;
+  }
+
+
+  @media (max-width: 768px) {
+    .quick-link {
+      max-width: 100%;
+    }
   }
 </style>

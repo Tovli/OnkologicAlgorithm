@@ -1,13 +1,13 @@
 <template>
-  <header class="columns">
-    <router-link to="/" class="logo column">
+  <header class="level">
+    <router-link to="/" class="logo level-left">
       <h1 class="heading">ipsum</h1>
-      <h3 class="tagline">the best hospital, ever</h3>
+      <h3 class="tagline">best hospital, ever</h3>
     </router-link>
-    <div class="column search-box">
+    <div class="level-item search-box">
       <Search/>
     </div>
-    <div class="column quick-links-box">
+    <div class="level-right quick-links-box">
       <QuickLinks/>
     </div>
   </header>
@@ -28,7 +28,7 @@ export default {
 
 <style scoped lang="less">
   header {
-    padding: 0 2rem;
+    padding: 0 2rem 1rem;
 
     .logo {
       display: flex;
@@ -41,15 +41,16 @@ export default {
       background: transparent url("../../public/img/medical-logo.png") no-repeat;
       background-size: 6rem 6rem;
 
+      .heading,
       .tagline {
-        white-space: nowrap;
+        width: 100%;
       }
-    }
 
-    .search-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      .tagline {
+        font-size: 1.2rem;
+        white-space: nowrap;
+        color: #999;
+      }
     }
   }
 </style>

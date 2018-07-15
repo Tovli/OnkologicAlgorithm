@@ -25,6 +25,7 @@ export default {
   @import "../assets/theme";
 
   .search {
+    flex-grow: 1;
     padding: 0 2rem;
 
     button {
@@ -32,6 +33,9 @@ export default {
       background-color: @primary-color;
     }
   }
+
+  /*@media (max-width: 1088px) {*/
+  /*}*/
 
   @media (max-width: 768px) {
     .search {
