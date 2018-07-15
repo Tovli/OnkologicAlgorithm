@@ -3,7 +3,7 @@
     <a v-for="link in links"
        v-bind:key="link.label"
        v-bind:class="'mdi-' + link.icon"
-       class="tile mdi mdi-36px quick-link mdi-outline">
+       class="tile mdi mdi-36px quick-link">
       <div>{{ link.label }}</div>
     </a>
   </nav>
