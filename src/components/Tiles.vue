@@ -1,13 +1,9 @@
 <template>
-  <div class="tile is-parent">
-    <div class="tile">
-      The magical tile element!
-    </div>
-    <div class="tile">
-      The magical tile element!
-    </div>
-    <div class="tile">
-      The magical tile element!
+  <div class="tile is-ancestor">
+    <div v-for="tile in tiles" class="tile is-parent">
+      <div class="tile is-child box">
+        {{ tile.text }}
+      </div>
     </div>
   </div>
 </template>
@@ -15,26 +11,27 @@
 <script lang="ts">
 export default {
   name: 'Tiles',
+  data() {
+    return {
+      tiles: [
+        {
+          text: 'The magical tile element!',
+        },
+        {
+          text: 'The magical tile element!',
+        },
+        {
+          text: 'The magical tile element!',
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="less">
 
-  .tile.is-parent {
-    > .tile {
-      height: 250px;
-      margin: 2em;
-      background: aquamarine none no-repeat;
-      background-size: 100%;
-      &:nth-child(1) {
-        background-image: url("../../public/img/banner/doctor-2722943_960_720.jpg");
-      }
-      &:nth-child(2) {
-        background-image: url("../../public/img/banner/doctor-1149149_960_720.jpg");
-      }
-      &:nth-child(3) {
-        background-image: url("../../public/img/banner/doctor-1461878769jQS.jpg");
-      }
-    }
+  .tile {
+    height: 250px;
   }
 </style>

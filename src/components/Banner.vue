@@ -56,6 +56,7 @@ export default {
       font-size: 2rem;
       background-repeat: no-repeat;
       background-size: 100%;
+      text-shadow: 1px 1px 2px #fff;
     }
   }
 
