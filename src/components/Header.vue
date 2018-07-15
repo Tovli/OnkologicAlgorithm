@@ -53,4 +53,21 @@ export default {
       }
     }
   }
+  @media (max-width: 768px) {
+    header {
+      .logo {
+        position: relative;
+        left: calc(50% - 4rem);
+        width: 8rem;
+        height: 14rem;
+        padding: 8rem 0 0 0;
+        background-size: 8rem 8rem;
+
+        .heading,
+        .tagline {
+          width: initial;
+        }
+      }
+    }
+  }
 </style>

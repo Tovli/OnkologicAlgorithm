@@ -34,12 +34,16 @@ export default {
     }
   }
 
-  /*@media (max-width: 1088px) {*/
-  /*}*/
+  @media (max-width: 1088px) {
+    .search .control {
+      width: 1em; // a fix to the header overflow issue
+      margin-right: 2rem;
+    }
+  }
 
   @media (max-width: 768px) {
     .search {
-      padding: 2rem 0;
+      margin: 1rem 0;
     }
   }
 </style>
