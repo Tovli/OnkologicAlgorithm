@@ -35,8 +35,9 @@ export default {
   }
 
   @media (max-width: 1088px) {
+    // a fix to the header overflow issue
     .search .control {
-      width: 1em; // a fix to the header overflow issue
+      width: 1em;
       margin-right: 2rem;
     }
   }
