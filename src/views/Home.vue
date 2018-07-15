@@ -19,4 +19,9 @@ export default {
 </script>
 
 <style scoped lang="less">
+  .home {
+    > :not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
 </style>
