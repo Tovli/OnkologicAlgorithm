@@ -1,6 +1,6 @@
 <template>
   <div class="tile is-ancestor">
-    <div v-for="tile in tiles" v-bind:key="tile.text" class="tile is-parent">
+    <div v-for="tile in tiles" v-bind:key="tile.title" class="tile is-parent">
       <div class="tile is-child box">
         <h3>{{tile.title}}</h3>
         {{ tile.text }}
@@ -41,5 +41,4 @@ export default {
       margin-bottom: 1em;
     }
   }
-  
 </style>
