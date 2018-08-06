@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <b-field v-bind:message="searchMessage"
-               >
+               type="is-danger">
       <b-input v-bind:class="isLoading" v-bind:disabled="isDisabled" placeholder="Search..."
                type="search"
                size="is-medium"
