@@ -26,16 +26,16 @@ export default {
     return {
       slides: [
         {
-          text: 'slide 1 text content',
+          text: 'One of the three best hospitals you\'ve ever meet',
           imageUrl: 'img/banner/doctor-2722943_960_720.jpg',
           textPos: 'right',
         },
         {
-          text: 'slide 2 text content',
+          text: 'Come to us to have a surgery',
           imageUrl: 'img/banner/doctor-1149149_960_720.jpg',
         },
         {
-          text: 'slide 3 text content, slide 3 text content',
+          text: 'The best Doctors are waiting for you',
           imageUrl: 'img/banner/doctor-1461878769jQS.jpg',
         },
       ],
@@ -63,7 +63,7 @@ export default {
       background-repeat: no-repeat;
       background-size: 100%;
       text-shadow: 1px 1px 2px #fff;
-
+      background-position: 0 50%;
       // use before pseudo element as an opacity overlay
       &:before {
         content: '';
