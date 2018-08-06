@@ -1,6 +1,6 @@
 <template>
   <div class="tile is-ancestor">
-    <div v-for="tile in tiles" class="tile is-parent">
+    <div v-for="tile in tiles" v-bind:key="tile.text" class="tile is-parent">
       <div class="tile is-child box">
         {{ tile.text }}
       </div>
