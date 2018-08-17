@@ -1,7 +1,7 @@
 <template>
   <div class="search">
-    <b-field v-bind:message="searchMessage"
-               type="is-danger">
+    <b-field
+               v-bind:type="searchTheme">
       <b-input v-bind:class="isLoading" v-bind:disabled="isDisabled" placeholder="Search..."
                type="search"
                size="is-medium"
@@ -13,6 +13,7 @@
         </button>
       </p>
     </b-field>
+    <b-field v-bind:message="searchMessage" v-bind:type="searchTheme" />
   </div>
 </template>
 
@@ -48,6 +49,9 @@ export default class Search extends Vue {
   }
   get searchMessage() {
     return this.showMessage ? 'The important value could not be found' : '';
+  }
+  get searchTheme() {
+    return this.showMessage ? 'is-danger':'';
   }
 }
 </script>
