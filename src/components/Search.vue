@@ -28,7 +28,7 @@ export default class Search extends Vue {
   isSearching = false;
   showMessage = false;
   searchForValue() {
-    console.log('enterng search');
+    
     this.isSearching = true;
     setTimeout(() => {
       this.isSearching = false;
@@ -51,7 +51,7 @@ export default class Search extends Vue {
     return this.showMessage ? 'The important value could not be found' : '';
   }
   get searchTheme() {
-    return this.showMessage ? 'is-danger':'';
+    return this.showMessage ? 'is-danger' : '';
   }
 }
 </script>
