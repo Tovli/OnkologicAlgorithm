@@ -28,7 +28,6 @@ export default class Search extends Vue {
   isSearching = false;
   showMessage = false;
   searchForValue() {
-    
     this.isSearching = true;
     setTimeout(() => {
       this.isSearching = false;
