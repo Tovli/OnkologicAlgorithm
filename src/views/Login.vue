@@ -2,45 +2,58 @@
   <main class="login">
     <h2 class="heading">login</h2>
     <section>
-      <b-field label="Username"
-               type="is-success"
+      <b-field v-bind:label="nameLabel"
+                     type="is-success"
                message="This username is available">
         <b-input value="johnsilver" maxlength="30" size="is-large"></b-input>
       </b-field>
-
       <b-field label="Password">
         <b-input type="password"
-                 value="iwantmytreasure"
                  size="is-large"
                  password-reveal>
         </b-input>
       </b-field>
-      <input type="submit" value="submit" class="button is-large is-pulled-right"/>
+      <button type="button"
+      v-on:click="onLogin" class="button is-large is-pulled-right">
+      login</button>
       <i class="is-clearfix"></i>
     </section>
   </main>
 </template>
 
-<script>
-export default {
+<script lang='ts'>
+import Vue from 'vue';
+
+export default Vue.extend({
   data() {
     return {
       name: 'John Silver',
     };
   },
-};
+  methods: {
+    onLogin() {
+      console.log('hey');
+    },
+  },
+  props: ['type'],
+  computed: {
+    nameLabel() : string {
+      return `${this.type} login`;
+    },
+  },
+});
 </script>
 
 <style lang="less" scoped>
-  .login {
-    padding: 2rem 6rem;
+.login {
+  padding: 2rem 6rem;
 
-    section {
-      margin-top: 2rem;
+  section {
+    margin-top: 2rem;
 
-      input[type=submit] {
-        margin-top: 1rem;
-      }
+    input[type="submit"] {
+      margin-top: 1rem;
     }
   }
+}
 </style>

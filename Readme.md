@@ -5,7 +5,7 @@
 - [x] Login page toggle
 - [ ] Login form
 - [ ] Metrics form
-- [ ] Menu with dummies
+- [x] Menu with dummies
 - [ ] Patient login
 - [ ] Doctor login
 - [ ] Tiles in home view
