@@ -16,13 +16,13 @@ export default new Router({
       path: '/doctor-login',
       name: 'doctor login',
       component: Login,
-      props: { type: 'doctor' },
+      props: { type: 'Doctor' },
     },
     {
       path: '/patient-login',
       name: 'patient login',
       component: Login,
-      props: { type: 'patient' },
+      props: { type: 'Patient' },
     },
   ],
 });

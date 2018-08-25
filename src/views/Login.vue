@@ -32,7 +32,16 @@ export default Vue.extend({
   },
   methods: {
     onLogin() {
-      console.log('hey');
+      switch (this.type) {
+        case 'Doctor':
+          
+          break;
+      case 'Patient':
+      
+      break;
+        default:
+          break;
+      }
     },
   },
   props: ['type'],
