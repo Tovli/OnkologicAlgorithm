@@ -34,11 +34,9 @@ export default Vue.extend({
     onLogin() {
       switch (this.type) {
         case 'Doctor':
-          
           break;
-      case 'Patient':
-      
-      break;
+        case 'Patient':
+          break;
         default:
           break;
       }
