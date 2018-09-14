@@ -13,10 +13,8 @@
                  password-reveal>
         </b-input>
       </b-field>
-      <router-link :to="{ name: 'user', params: { userId: 123 }}" tag='button'>Login</router-link>
-      <button type="button"
-      v-on:click="onLogin" class="button is-large is-pulled-right">
-      login</button>
+      <router-link class="button is-large is-pulled-right"
+      :to="{ path: 'user', params: { userId: 123 }}" tag='button'>Login</router-link>
       <i class="is-clearfix"></i>
     </section>
   </main>
@@ -28,7 +26,7 @@ import Vue from 'vue';
 export default Vue.extend({
   data() {
     return {
-      name: 'John Silver',
+      username: 'John Silver',
     };
   },
   methods: {
@@ -49,6 +47,7 @@ export default Vue.extend({
       return `${this.type} login`;
     },
   },
+
 });
 </script>
 
