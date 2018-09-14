@@ -5,7 +5,7 @@
       <b-field v-bind:label="nameLabel"
                      type="is-success"
                message="This username is available">
-        <b-input value="johnsilver" maxlength="30" size="is-large"></b-input>
+        <b-input :value="username" maxlength="30" size="is-large"></b-input>
       </b-field>
       <b-field label="Password">
         <b-input type="password"
@@ -13,6 +13,7 @@
                  password-reveal>
         </b-input>
       </b-field>
+      <router-link :to="{ name: 'user', params: { userId: 123 }}" tag='button'>Login</router-link>
       <button type="button"
       v-on:click="onLogin" class="button is-large is-pulled-right">
       login</button>
