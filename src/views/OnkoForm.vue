@@ -23,7 +23,7 @@
         <b-input v-bind:value="triglycerides" rounded> </b-input>
     </b-field>
     <button v-on:click="onSubmitForm" class="button is-large is-pull-left">Submit Form</button>
-    <b> {{formSubmitResult}}</b>
+    <b>{{formSubmitResult}}</b>
     </section>
 </template>
 <script lang="ts">

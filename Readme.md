@@ -10,7 +10,7 @@
 - [ ] Doctor login
 - [ ] Tiles in home view
 - [ ] Doctor report - This will contain a list of patient names and a report/graph randomized for each one (D3)
-- [ ] Search input with "not found" result (minimal)
+- [x] Search input with "not found" result (minimal)
 - [x] Awesome icons
 - [x] logo for the header
 - [ ] Crunching gears to simulate processing the algorithm and randomized result
