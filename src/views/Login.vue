@@ -14,7 +14,7 @@
         </b-input>
       </b-field>
       <router-link class="button is-large is-pulled-right"
-      :to="{ path: 'user', params: { userId: 123 }}" tag='button'>Login</router-link>
+      :to="{ name: routerName, params: { userId }}" tag='button'>Login</router-link>
       <i class="is-clearfix"></i>
     </section>
   </main>
@@ -27,6 +27,7 @@ export default Vue.extend({
   data() {
     return {
       username: 'John Silver',
+      userId: '123',
     };
   },
   methods: {
@@ -46,8 +47,10 @@ export default Vue.extend({
     nameLabel() : string {
       return `${this.type} login`;
     },
+    routerName() : string {
+      return this.type;
+    },
   },
-
 });
 </script>
 

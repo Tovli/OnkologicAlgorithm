@@ -1,5 +1,8 @@
 <template>
 <section>
+    <b-field label='Patient Id'>
+        <b-input v-bind:value="getUserId" rounded disabled> </b-input>
+    </b-field>
     <b-field label='Acidity (pH)'>
         <b-input v-bind:value="acidity" rounded> </b-input>
     </b-field>
@@ -16,24 +19,31 @@
         <b-input v-bind:value="glucose" rounded> </b-input>
     </b-field>
     <b-field label='Triglycerides'>
-        <b-input v-bind:value="Triglycerides" rounded> </b-input>
+        <b-input v-bind:value="triglycerides" rounded> </b-input>
     </b-field>
     </section>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
+
 export default Vue.extend({
-    data() {
-        return {
-            acidity:'',
-            bloodVolume:'',
-            c4:'',
-            creatinine:'',
-            glucose:'',
-            triglycerides:'',
-        }
-    }
-})
+  data() {
+    return {
+      acidity: '',
+      bloodVolume: '',
+      c4: '',
+      creatinine: '',
+      glucose: '',
+      triglycerides: '',
+    };
+  },
+  props: ['userId'],
+  computed: {
+    getUserId() : string {
+      return this.userId;
+    },
+  },
+});
 </script>
 <style lang="less">
 
