@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 import OnkoForm from './views/OnkoForm.vue';
+import DoctorAnalytics from './views/DoctorAnalytics.vue';
 
 Vue.use(Router);
 
@@ -29,6 +30,12 @@ export default new Router({
       path: '/patient',
       name: 'Patient',
       component: OnkoForm,
+      props: true,
+    },
+    {
+      path: '/doctor',
+      name: 'Doctor',
+      component: DoctorAnalytics,
       props: true,
     },
   ],
