@@ -6,6 +6,11 @@
 import Vue from 'vue';
 import Chart from 'chart.js';
 
+const random = (max = 100, min = 0) => Math.round(Math.random() * max) - min;
+
+const randoms = (num = 10, eachMax = 100, eachMin = 0) => [...Array(num).keys()]
+  .map(random.bind(null, eachMax, eachMin));
+
 export default Vue.extend({
   data() {
     return {
@@ -32,13 +37,13 @@ export default Vue.extend({
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#FC2525',
-            data: [40, 39, 10, 40, 39, 80, 40],
+            backgroundColor: '#ef5575',
+            data: randoms(7),
           },
           {
             label: 'Data Two',
-            backgroundColor: '#05CBE1',
-            data: [60, 55, 32, 10, 2, 12, 53],
+            backgroundColor: '#2bc1e0',
+            data: randoms(7),
           },
         ],
       },
