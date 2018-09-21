@@ -1,12 +1,17 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <h1>doctor analytics</h1>
+    <chart></chart>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Chart from 'components/chart.vue'
-export default Vue.extend({
-})
+import Chart from '@/components/Chart.vue';
+
+export default {
+  name: 'DoctorAnalytics',
+  components: {
+    Chart,
+  },
+};
 </script>
