@@ -3,7 +3,7 @@
     <h2 class="heading">login</h2>
     <section>
       <b-field v-bind:label="nameLabel"
-                     type="is-success"
+               type="is-success"
                message="This username is available">
         <b-input :value="username" maxlength="30" size="is-large"></b-input>
       </b-field>
@@ -14,7 +14,7 @@
         </b-input>
       </b-field>
       <router-link class="button is-large is-pulled-right"
-      :to="{ name: routerName, params: { userId }}" tag='button'>Login</router-link>
+                   :to="{ name: routerName, params: { userId }}" tag='button'>Login</router-link>
       <i class="is-clearfix"></i>
     </section>
   </main>
@@ -44,10 +44,10 @@ export default Vue.extend({
   },
   props: ['type'],
   computed: {
-    nameLabel() : string {
+    nameLabel(): string {
       return `${this.type} login`;
     },
-    routerName() : string {
+    routerName(): string {
       return this.type;
     },
   },
