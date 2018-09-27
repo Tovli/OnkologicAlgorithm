@@ -55,7 +55,7 @@ export default Vue.extend({
       setTimeout(() => {
         this.isLoading = false;
         this.formSubmitResult = `Result is ${random()}`;
-      }, 4 * 1000);
+      }, random(4 * 1000, 2 * 1000));
     },
   },
   props: ['userId'],
