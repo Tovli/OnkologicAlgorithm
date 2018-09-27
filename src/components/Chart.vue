@@ -5,11 +5,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import Chart from 'chart.js';
-
-const random = (ceil = 100, floor = 0) => Math.round(Math.random() * ceil) - floor;
-
-const randoms = (num = 10, ceil = 100, floor = 0) => [...Array(num).keys()]
-  .map(random.bind(null, ceil, floor));
+import { randoms } from '../services/math';
 
 export default Vue.extend({
   data() {

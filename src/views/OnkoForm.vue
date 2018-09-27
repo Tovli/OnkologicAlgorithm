@@ -33,6 +33,7 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
+import { random } from '../services/math';
 
 export default Vue.extend({
   data() {
@@ -53,7 +54,7 @@ export default Vue.extend({
       this.isLoading = true;
       setTimeout(() => {
         this.isLoading = false;
-        this.formSubmitResult = 'Result is 39.5';
+        this.formSubmitResult = `Result is ${random()}`;
       }, 4 * 1000);
     },
   },
