@@ -13,7 +13,7 @@
                  password-reveal>
         </b-input>
       </b-field>
-      <router-link class="button is-large is-pulled-right"
+      <router-link class="submit button is-large is-pulled-right"
                    :to="{ name: routerName, params: { userId }}" tag='button'>Login</router-link>
       <i class="is-clearfix"></i>
     </section>
@@ -61,7 +61,7 @@ export default Vue.extend({
   section {
     margin-top: 2rem;
 
-    input[type="submit"] {
+    .submit {
       margin-top: 1rem;
     }
   }
